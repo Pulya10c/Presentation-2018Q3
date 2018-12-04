@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="./img/javascript-learn.jpg">
+				</section>
+				<section>
+					<h1>Data type</h1>
+					<h3>Presentation will tell about data types in javascript</h3>
+					<p>
+						<small>Created by <a href="https://github.com/Pulya10c">Aleh Serhiyenia</a></small>
+					</p>
+				</section>
+				<section>
+					<section id="fragments">
+						<h2>ESMAScript</h2>
+						<p><span class="fragment">the latest version 6 or 2015</span> <span class="fragment">includes</span> <span class="fragment">seven data types</span></p>
+					</section>
+					<section>
+						<ul>
+						<li>Boolean</li>
+						<li>Null</li>
+						<li>Undefined</li>
+						<li>Number</li>
+						<li>String</li>
+						<li>Object</li>
+						<li>Symbol</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section data-background="./img/boolean.jpg">
+					</section>
+					<section>
+						<p>this is</p>
+						<h2 class="fragment">Boolean</h2>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							```
+							let run = true; 		  //true is data type "Bollean"
+							let stop = false; 		//false is data type "Bollean"
+							let a=10, b=20;
+							console.log(a < b)		//true is data type "Bollean"
+							console.log(a === b)	  //false is data type "Bollean"
+							console.log(a !== b)	  //true is data type "Bollean"
+							```
+						</script>
+					</section>
+				</section>
+				<section >
+					<section data-background="./img/null.jpg">
+					</section>
+					<section>
+						<h2>Null</h2>		
+						<p>
+							<span class="fragment">empty</span> <span class="fragment">or</span> <span class="fragment">value unknown</span>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Undefined</h2>
+					</section>
+					<section data-background="./img/undefined.jpg">
+						<p>
+							<span class="fragment">	the value is not defined</span>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section data-background="./img/Numbers.png">
+						<h2 class="fragment">Number</h2>
+					</section>
+					<section>
+						<p>
+							<span>integers and floating-point</span>
+						</p>
+						<p>
+							<span class="fragment">stored in 64-bit format</span>
+						</p>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							```
+							let a = 1; 		  				 // is data type "Number"
+							let b = -1; 						  // is data type "Number"
+							let c = 2.75;						 // is data type "Number"
+							console.log(a / 0)					//this is Infinity
+							console.log(Infinity + 5 == Infinity) //this is data type "Bollean"
+							console.log(1e500)	  		      //this is Infinity
+							console.log(0/0)					  //this is NaN
+							console.log(1 + NaN)	  		    //this is NaN
+							```
+						</script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>String</h2>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							```
+							"Hi, people" // double quotes
+							'Hi, people' // single quotes
+							`Hi, people` // backticks
+							```
+						</script>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>{ }</h2>
+					</section>
+					<section>
+						<h2>Object</h2>
+						<p class="fragment">
+							complex data type
+						</p>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							```
+							let Object = {
+								name:     'Oleh',
+								age:      '38',
+								language: 'ru'
+							}
+							```
+						</script>
+					</section>
+				</section>
+				<section>
+					<h2>Symbol</h2>
+					<p class="fragment">
+						this is new data type in ECMAScript 6
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Summary</h2>
+					</section>
+					<section data-background="./img/data type.png">
+					</section>
+				</section>
+				<section>
+					<h2 >Thanks for your attention</h2>
+				</section>
+				<section data-background="./img/js.jpg">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
